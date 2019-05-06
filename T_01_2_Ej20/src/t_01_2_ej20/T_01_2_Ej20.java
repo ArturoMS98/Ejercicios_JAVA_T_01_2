@@ -67,7 +67,7 @@ public class T_01_2_Ej20 {
         }
         System.out.println("Numero maximo: " + numeroMaximo);
         System.out.println("Numero minimo: " + numeroMinimo);
-        float aux = sumaNumeros/numerosTotales;
+        float aux = (float)sumaNumeros/numerosTotales;
         System.out.println("Media: " + aux);
     }
 }
