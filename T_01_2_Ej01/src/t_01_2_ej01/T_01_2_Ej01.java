@@ -52,25 +52,25 @@ public class T_01_2_Ej01 {
         final String mensajeMedio = "El segundo mayor numero de la serie es: ";
         final String mensajeMenor = "El menor numero de la serie es: ";
         if(num2 > num3)
+        {
+            System.out.println(mensajeMayor + num1);
+            System.out.println(mensajeMedio + num2);
+            System.out.println(mensajeMenor + num3);
+        }
+        else
+        {
+            if(num1 > num3)
             {
                 System.out.println(mensajeMayor + num1);
-                System.out.println(mensajeMedio + num2);
-                System.out.println(mensajeMenor + num3);
+                System.out.println(mensajeMedio + num3);
+                System.out.println(mensajeMenor + num2);
             }
             else
             {
-                if(num1 > num3)
-                {
-                    System.out.println(mensajeMayor + num1);
-                    System.out.println(mensajeMedio + num3);
-                    System.out.println(mensajeMenor + num2);
-                }
-                else
-                {
-                    System.out.println(mensajeMayor + num3);
-                    System.out.println(mensajeMedio + num1);
-                    System.out.println(mensajeMenor + num2);
-                }
+                System.out.println(mensajeMayor + num3);
+                System.out.println(mensajeMedio + num1);
+                System.out.println(mensajeMenor + num2);
             }
+        }
     }
 }

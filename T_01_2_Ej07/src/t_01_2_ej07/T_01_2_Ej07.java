@@ -30,7 +30,7 @@ public class T_01_2_Ej07 {
         int contadorNumeros = 0;
         int contador = 0;
         //BACKEND
-        while(contadorNumeros < 6)
+        while(contadorNumeros < 4)
         {
             divisor = numero;
             do

@@ -25,7 +25,7 @@ public class T_01_2_Ej12 {
     public static void main(String[] args) {
         // Esqueleto de la aplicacion: //
         // VARIABLES LOCALES //
-        final int INICIO = 0; //numero por el que comenzamos a sumar los impares
+        final int INICIO = 1; //numero por el que comenzamos a sumar los impares
         final int FINAL = 100; //numero por el que dejamos de sumar impares
         
         //BACKEND//
