@@ -12,6 +12,8 @@ import java.util.Scanner;
  * Esta clase es el esqueleto del programa, y su funcion es: 1. Escribe un
  * algoritmo que, introducidos por teclado tres valores, los represente en
  * pantalla ordenados de mayor a menor.
+ * @version 1.1
+ * tiempo invertido: indeterminado
  */
 public class T_01_2_Ej01 {
 
@@ -25,11 +27,11 @@ public class T_01_2_Ej01 {
         int num1,num2,num3;
         //FRONTEND//
             //PETICION DE DATOS//
-        System.out.println("Introduce el primer numero de la serie: ");
+        System.out.println(MENSAJEPETICION1);
         num1 = in.nextInt();
-        System.out.println("Introduce el segundo numero de la serie: ");
+        System.out.println(MENSAJEPETICION2);
         num2 = in.nextInt();
-        System.out.println("Introduce el tercer numero de la serie: ");
+        System.out.println(MENSAJEPETICION3);
         num3 = in.nextInt();
         
         //BACKEND//
@@ -43,6 +45,9 @@ public class T_01_2_Ej01 {
             metodoComparacion(num2, num1, num3);
         }
     }
+    private static final String MENSAJEPETICION3 = "Introduce el tercer numero de la serie: ";
+    private static final String MENSAJEPETICION2 = "Introduce el segundo numero de la serie: ";
+    private static final String MENSAJEPETICION1 = "Introduce el primer numero de la serie: ";
     
     //Metodos suplementarios de la clase principal//
     //static void... en desarrollo

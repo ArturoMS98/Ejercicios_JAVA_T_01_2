@@ -1,8 +1,5 @@
-
 package t_01_2_ej15;
-
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 22, 2019 10:16:07 PM                            *
@@ -29,13 +26,15 @@ public class T_01_2_Ej15 {
         
         //FRONTEND//
             //PETICION DE DATOS//
-        System.out.print("Introduzca el numero a analizar: ");
-        numero = in.nextInt();
+            System.out.print("Introduzca el numero a analizar: ");
+            numero = in.nextInt();
         //BACKEND//
-        if(metodoEsPrimo(numero) && (numero > 0))
-            System.out.println("El numero es primo.");
-        else
-            System.out.println("El numero no es primo.");
+            //Comprobación de si el número es primo//
+            if(metodoEsPrimo(numero) && (numero > 0))
+        //FRONTEND//
+                System.out.println("El numero es primo.");
+            else
+                System.out.println("El numero no es primo.");
     }
     
 

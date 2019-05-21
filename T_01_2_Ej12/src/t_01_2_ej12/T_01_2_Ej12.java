@@ -1,11 +1,10 @@
-
 package t_01_2_ej12;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 20, 2019 4:16:27 PM                            *
  * fecha de finalizacion: Apr 20, 2019 4:34:27 PM                              *
  * nombre del proyecto: T_01_2_Ej12.java                                       *
+ * @version 1.1; tiempo de version: 6 minutos                                  *
  ******************************************************************************/
 
 public class T_01_2_Ej12 {
@@ -25,8 +24,8 @@ public class T_01_2_Ej12 {
     public static void main(String[] args) {
         // Esqueleto de la aplicacion: //
         // VARIABLES LOCALES //
-        final int INICIO = 1; //numero por el que comenzamos a sumar los impares
-        final int FINAL = 100; //numero por el que dejamos de sumar impares
+        final int INICIO = 5; //numero por el que comenzamos a sumar los impares
+        final int FINAL = 1; //numero por el que dejamos de sumar impares
         
         //BACKEND//
         
@@ -35,7 +34,6 @@ public class T_01_2_Ej12 {
         System.out.println("Suma con el bucle do-while: " + metodoSumaImparesDoWhile(INICIO, FINAL));
         System.out.println("Suma con el bucle for: " + metodoSumaImparesFor(INICIO, FINAL));
     }
-    
 
     //Metodos suplementarios de la clase principal//
 
@@ -64,7 +62,6 @@ public class T_01_2_Ej12 {
         return suma;
     }
     
-    
     /*_________________________________________________________________________
      | Función del metodoSumaImparesDoWhile:                                   |
      | Con un bucle do-while, suma los numeros impares entre los parametros    |
@@ -80,17 +77,21 @@ public class T_01_2_Ej12 {
         int suma = 0;
         int contador = start;
         //CUERPO DEL METODO//
-        do
+        if(start <= end)
         {
-            if(contador%2 != 0)
+            do
             {
-                suma += contador;
-            }
-            contador++;
-        }while(contador <= end);
-        return suma;
+                if(contador%2 != 0)
+                {
+                    suma += contador;
+                }
+                contador++;
+            }while(contador <= end);
+            return suma;
+        }
+        else
+            return 0;
     }
-    
     
     /*_________________________________________________________________________
      | Función del metodoSumaImparesFor:                                       |
@@ -113,7 +114,5 @@ public class T_01_2_Ej12 {
             }
         }
         return suma;
-    }
-    
-    
+    }   
 }

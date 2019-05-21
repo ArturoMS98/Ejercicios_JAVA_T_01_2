@@ -1,8 +1,5 @@
-
 package t_01_2_ej16;
-
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 24, 2019 10:00:07 PM                           *
@@ -28,15 +25,19 @@ public class T_01_2_Ej16 {
         int numero;
         int numeroDigitos;
         Scanner in = new Scanner(System.in);
+        
         //FRONTEND//
             //PETICION DE DATOS//
-        System.out.print("Introduzca el número por teclado: ");
-        numero = in.nextInt();
+            System.out.print("Introduzca el número por teclado: ");
+            numero = in.nextInt();
+
         //BACKEND//
-        numeroDigitos = metodoCalculoDigitos(numero);
+            //Cálculo del número de dígitos de numero//
+            numeroDigitos = metodoCalculoDigitos(numero);
         
-        //DESPEDIDA//
-        System.out.println("El numero de digitos del numero " + numero + " es: " + numeroDigitos);
+        //FRONTEND//
+            //DESPEDIDA//
+            System.out.println("El numero de digitos del numero " + numero + " es: " + numeroDigitos);
     }
     
 

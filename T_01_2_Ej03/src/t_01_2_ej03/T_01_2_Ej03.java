@@ -17,6 +17,8 @@ import java.util.Scanner;
  * fecha de inicializacion: Apr 18, 2019 2:31:01 PM                            *
  * fecha de finalizacion: Apr 18, 2019 3:07:00 PM (incluyendo comida)          *
  * nombre del proyecto: T_01_2_Ej03.java                                       *
+ * @version 1.1                                                                *
+ * <p>Tiempo de versión: 17 minutos 46 segundos</p>                            *
  *                                                                             *
  ******************************************************************************/
 public class T_01_2_Ej03 {
@@ -30,19 +32,23 @@ public class T_01_2_Ej03 {
         Scanner in = new Scanner(System.in);
         //FRONTEND//
             //PETICION DE DATOS//
-        System.out.println("Introduzca la base de la potencia: ");
-        base = in.nextInt();
-        System.out.println("Introduzca el exponente de la potencia: ");
-        exponente = in.nextInt();
-        
+            System.out.println(MENSAJEPETICIONBASE);
+            base = in.nextInt();
+            System.out.println(MENSAJEPETICIONEXPONENTE);
+            exponente = in.nextInt();
+        //BACKEND//
         resultado = metodoExponencial(base, exponente);
+        //FRONTEND//
         System.out.println(resultado);
     }
+    private static final String MENSAJEPETICIONEXPONENTE = "Introduzca el exponente de la potencia: ";
+    private static final String MENSAJEPETICIONBASE = "Introduzca la base de la potencia: ";
     
     //Metodos suplementarios de la clase principal//
     /*_________________________________________________________________________
      | Función del metodoExponencial:                                          |
      | Recibe dos enteros y eleva uno al otro                                  |
+     | ATENCION: SOLO FUNCIONA CON EXPONENTES ENTEROS POSITIVOS                |
      | Parámetros:                                                             |
      | int base: Base de la potencia                                           |
      | int exp: Exponente de la potencia                                       |

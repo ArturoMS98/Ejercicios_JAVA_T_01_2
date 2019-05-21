@@ -1,8 +1,5 @@
-
 package t_01_2_ej05;
-
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 18, 2019 3:35:29 PM                            *

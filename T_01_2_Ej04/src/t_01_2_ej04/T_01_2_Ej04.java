@@ -23,6 +23,7 @@ import java.util.Scanner;
  * fecha de inicializacion: Apr 18, 2019 3:08:25 PM                            *
  * fecha de finalizacion: Apr 18, 2019 3:35:00 PM                              *
  * nombre del proyecto: T_01_2_Ej04.java                                       *
+ * @version 1.1     tiempo de cambio de versión: 9 minutos 14 segundos.        *
  *                                                                             *
  ******************************************************************************/
 public class T_01_2_Ej04 {
@@ -61,21 +62,4 @@ public class T_01_2_Ej04 {
         System.out.println("Suma de la primera cadena: " + resultado1);
         System.out.println("Suma de la segunda cadena: " + resultado2);
     }
-    
-    //Metodos suplementarios de la clase principal//
-    /*_________________________________________________________________________
-     | Función del metodo:                                                     |
-     | 
-     | Parámetros:                                                             |
-     | 
-     | Método dirigido a: FrontEnd //BackEnd                                              |
-     |________________________________________________________________________*/
-    /*static void metodo ()
-    {
-        //VARIABLES LOCALES//
-        
-        //CUERPO DEL METODO//
-        
-    }
-    */
 }

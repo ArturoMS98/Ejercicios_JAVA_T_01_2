@@ -1,9 +1,5 @@
-
 package t_01_2_ej13;
-
-import java.text.DecimalFormat;
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 20, 2019 4:35:21 PM                            *
@@ -30,16 +26,16 @@ public class T_01_2_Ej13 {
         Scanner in = new Scanner(System.in);
         //FRONTEND//
             //PETICION DE DATOS//
-        System.out.print("Introduzca el numero del que mostrar la tabla de multiplicación: ");
-        entero = in.nextInt();
+            System.out.print("Introduzca el numero del que mostrar la tabla de multiplicación: ");
+            entero = in.nextInt();
         
             //MUESTRA DE TABLA//
-        for(int i = 1; i <= 10; i++)
-        {
-            System.out.print("|" + entero + " * " + i + " = " + (i*entero) + ("|\t"));
-            if(i%5 == 0)
-                System.out.println("");
-        }
-        System.out.println("");
+            for(int i = 1; i <= 10; i++)
+            {
+                System.out.print("|" + entero + " * " + i + " = " + (i*entero) + ("|\t"));
+                if(i%5 == 0)
+                    System.out.println("");
+            }
+            System.out.println("");
     }
 }

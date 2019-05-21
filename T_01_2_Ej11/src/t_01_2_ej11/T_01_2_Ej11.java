@@ -1,9 +1,6 @@
-
 package t_01_2_ej11;
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 20, 2019 3:57:00 PM                            *
@@ -29,19 +26,24 @@ public class T_01_2_Ej11 {
         Scanner in = new Scanner(System.in);
         int nota1, nota2, nota3;
         float promedio;
-        DecimalFormat formato1 = new DecimalFormat("#.00");
+        DecimalFormat formato1 = new DecimalFormat("#.00"); //Declaramos variable de tipo formato con dos decimales//
+        
         //FRONTEND//
-            //PETICION DE DATOS//
-        System.out.print("Introduzca la primera nota de la que calcular la media: ");
-        nota1 = in.nextInt();
-        System.out.print("Introduzca la segunda nota de la que calcular la media: ");
-        nota2 = in.nextInt();
-        System.out.print("Introduzca la tercera nota de la que calcular la media: ");
-        nota3 = in.nextInt();
+            //PETICION DE DATOS//No verifica que sean correctas//
+            System.out.print("Introduzca la primera nota de la que calcular la media: ");
+            nota1 = in.nextInt();
+            System.out.print("Introduzca la segunda nota de la que calcular la media: ");
+            nota2 = in.nextInt();
+            System.out.print("Introduzca la tercera nota de la que calcular la media: ");
+            nota3 = in.nextInt();
+            
         //BACKEND//
-        promedio = metodoPromedio(nota1, nota2, nota3);
+            //Calculo del promedio//
+            promedio = metodoPromedio(nota1, nota2, nota3);
+        
         //FRONTEND//
-        System.out.println("La nota media es: " + formato1.format(promedio));
+            //mostrar nota media
+            System.out.println("La nota media es: " + formato1.format(promedio));
     }
     
 
