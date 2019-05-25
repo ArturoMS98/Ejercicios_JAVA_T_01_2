@@ -2,8 +2,8 @@ package t_01_2_ej15;
 import java.util.Scanner;
  /******************************************************************************
  * @author baha                                                                *
- * fecha de inicializacion: Apr 22, 2019 10:16:07 PM                            *
- * fecha de finalizacion: Apr 22, 2019 10:27:07 PM                              *
+ * fecha de inicializacion: Apr 22, 2019 10:16:07 PM                           *
+ * fecha de finalizacion: Apr 22, 2019 10:27:07 PM                             *
  * nombre del proyecto: T_01_2_Ej15.java                                       *
  ******************************************************************************/
 

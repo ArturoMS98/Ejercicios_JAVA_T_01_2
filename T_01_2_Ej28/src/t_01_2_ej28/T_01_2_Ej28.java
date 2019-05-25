@@ -2,8 +2,8 @@ package t_01_2_ej28;
 import java.util.Scanner;
  /******************************************************************************
  * @author baha                                                                *
- * fecha de inicializacion: May 10, 2019 11:52:24 PM                             *
- * fecha de finalizacion: May 10, 2019 0:24:00 PM                               *
+ * fecha de inicializacion: May 10, 2019 11:52:24 PM                           *
+ * fecha de finalizacion: May 10, 2019 0:24:00 PM                              *
  * nombre del proyecto: T_01_2_Ej28.java                                       *
  *******************************************************************************
  *                                                                             *

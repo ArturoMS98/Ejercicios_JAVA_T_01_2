@@ -1,8 +1,5 @@
-
 package t_01_2_ej20;
-
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 26, 2019 12:13:00 AM                           *
@@ -24,8 +21,15 @@ public class T_01_2_Ej20 {
 
     public static void main(String[] args) {
         // Esqueleto de la aplicacion: //
+        Scanner in = new Scanner(System.in);
+        int numerosTotales;
+        //FRONTEND//
+            //PETICION DE DATOS//
+            System.out.print("Introduzca el número de números que se introducirán: ");
+            numerosTotales = in.nextInt();
+            
         //BACKEND//
-        metodoPeticionYAnalisisNumeros();
+            metodoPeticionYAnalisisNumeros(numerosTotales);
     }
     
 
@@ -37,38 +41,42 @@ public class T_01_2_Ej20 {
      | Parámetros:                                                             |
      | Método dirigido a: FrontEnd y BackEnd                                   |
      |________________________________________________________________________*/
-    static void metodoPeticionYAnalisisNumeros()
+    static void metodoPeticionYAnalisisNumeros(int numerosTotales)
     {
         //VARIABLES LOCALES//
         Scanner in = new Scanner(System.in);
-        int numeroIntroducir;
-        int sumaNumeros = 0;
-        int numerosTotales;
-        int numeroMinimo;
-        int numeroMaximo;
+        int introduccion;
+        int suma = -1;
+        int minimo = -1;
+        int maximo = -1;
+        int contadorNumeros = 0;
         //CUERPO DEL METODO//
-        System.out.print("Introduzca el número de números que se introducirán: ");
-        numerosTotales = in.nextInt();
-        System.out.print("Introduzca un numero: ");
-        numeroIntroducir = in.nextInt();
-        numeroMinimo = numeroIntroducir;
-        numeroMaximo = numeroIntroducir;
-        sumaNumeros += numeroIntroducir;
-        for(int contadorNumeros = numerosTotales - 1; contadorNumeros > 0; contadorNumeros--)
+        do
         {
+            //PETICION DE DATOS//
             System.out.print("Introduzca un numero: ");
-            numeroIntroducir = in.nextInt();
-            
-            if((numeroMinimo > numeroIntroducir))
-                numeroMinimo = numeroIntroducir;
-            if((numeroMaximo < numeroIntroducir))
-                numeroMaximo = numeroIntroducir;
-            sumaNumeros += numeroIntroducir;
-        }
-        System.out.println("Numero maximo: " + numeroMaximo);
-        System.out.println("Numero minimo: " + numeroMinimo);
-        float aux = (float)sumaNumeros/numerosTotales;
+            introduccion = in.nextInt();
+            //Si es la primera introducción, inicializa las variables de estadística//
+            if(contadorNumeros == 0)
+            {
+                minimo = introduccion;
+                maximo = introduccion;
+                suma = introduccion;
+            }
+            else
+            {//Si no es la primera introducción, compara las variables con la última variable introducida//
+                if((minimo > introduccion))
+                    minimo = introduccion;
+                if((maximo < introduccion))
+                    maximo = introduccion;
+                suma += introduccion;
+            }
+            contadorNumeros++;
+        }while(contadorNumeros < numerosTotales);
+        //MOSTRAR RESULTADOS//
+        System.out.println("Numero maximo: " + maximo);
+        System.out.println("Numero minimo: " + minimo);
+        float aux = (float)suma/numerosTotales;
         System.out.println("Media: " + aux);
     }
 }
-//error de la media con decimales.//

@@ -2,8 +2,8 @@ package t_01_2_ej31;
 import java.util.Scanner;
  /******************************************************************************
  * @author baha                                                                *
- * fecha de inicializacion: May 10, 2019 1:15:54 PM                             *
- * fecha de finalizacion: May 10, 2019 9:21:22 PM                               *
+ * fecha de inicializacion: May 10, 2019 1:15:54 PM                            *
+ * fecha de finalizacion: May 10, 2019 9:21:22 PM                              *
  * nombre del proyecto: T_01_2_Ej31.java                                       *
  *******************************************************************************
  *                                                                             *
@@ -19,7 +19,7 @@ public class T_01_2_Ej31 {
     *                                                                          *
     * CLASE MAIN                                                               *
     * Funcion del método MAIN:                                                 *
-    * 
+    * Crear un número aleatorio y dar 6 oportunidades al usuario para acertar  *
     *                                                                          *
     ***************************************************************************/
 
@@ -39,8 +39,9 @@ public class T_01_2_Ej31 {
         {
             //FRONTEND//
             //PETICION DE DATOS//
-            System.out.println("Introduzca el numero que cree que es: ");
+            System.out.print("Introduzca el numero que cree que es: ");
             numeroPeticion = in.nextInt();
+            
             contadorNumeros++;
         }while((numeroPeticion != random) && (contadorNumeros < maximoNumeros));
         if(contadorNumeros == maximoNumeros)

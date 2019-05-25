@@ -1,8 +1,5 @@
-
 package t_01_2_ej21;
-
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: May 6, 2019 1:29:26 AM                             *
@@ -31,19 +28,21 @@ public class T_01_2_Ej21 {
         int numeroTabla;
         Scanner in = new Scanner(System.in);
         //FRONTEND//
-        System.out.print("Introduzca el número del que mostrar la tabla de multiplicación: ");
+        System.out.print(MENSAJE_PETICION_NUMERO_TABLA);
             //PETICION DE DATOS//
             numeroTabla = in.nextInt();
         //BACKEND//
         mostrarTabla(numeroTabla);
     }
+    private static final String MENSAJE_PETICION_NUMERO_TABLA = "Introduzca el número del que mostrar la tabla de multiplicación: ";
     
 
     //Metodos suplementarios de la clase principal//
 
     /*_________________________________________________________________________
      | Función del metodo mostrarTabla():                                      |
-     | Mostrar la tabla de multiplicacion desde 1 a 10.                        |
+     | Mostrar la tabla de multiplicacion desde 1 a 10. Correspondiente al     |
+     | entero numero.                                                          |
      | Parámetros:                                                             |
      | numero: Numero del que mostrar la tabla de multiplicación               |
      | Método dirigido a: FrontEnd                                             |
@@ -53,13 +52,15 @@ public class T_01_2_Ej21 {
         //VARIABLES LOCALES//
         final short maximoTabla = 10;
         //CUERPO DEL METODO//
-        System.out.println("_________________________________________________");
+        System.out.println(BORDE_SUPERIOR_TABLA);
         for(int i = 1; i <= maximoTabla; i++)
-        {
+        {   //numero * contador = resultado//
             System.out.print("|\t" + numero + "*" + i + " = " + numero*i + " \t|");
-            if(i%2 == 0)
+            if(i%2 == 0)    //Salta de linea cada dos iteraciones//
                 System.out.println("");
         }
-        System.out.println("|_______________________||______________________|");
+        System.out.println(BORDE_INFERIOR_TABLA);
     }
+    private static final String BORDE_INFERIOR_TABLA = "|_______________________||______________________|";
+    private static final String BORDE_SUPERIOR_TABLA = "_________________________________________________";
 }

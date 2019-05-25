@@ -15,9 +15,9 @@ public class T_01_2_Ej12 {
     * Funcion de la clase:                                                     *
     * 12. Escribe un programa en Java que sume los enteros impares entre 0 y   *
     * 100. El programa debe implementarse de tres formas distintas:            *
-    *   (a) Con un bucle while.
-    *   (b) Con un bucle do­while.
-    *   (c) Con un bucle for
+    *   (a) Con un bucle while.                                                *
+    *   (b) Con un bucle do­while.                                             *
+    *   (c) Con un bucle for                                                   *
     *                                                                          *
     ***************************************************************************/
 

@@ -37,13 +37,15 @@ public class T_01_2_Ej22 {
         
         //FRONTEND//
             //PETICION DE DATOS//
-            System.out.print("Introduzca la longitud de la base del rectángulo: ");
+            System.out.print(MENSAJE_PETICION_BASE);
             base = in.nextInt();
-            System.out.println("Introduzca la longitud de altura del rectángulo: ");
+            System.out.println(MENSAJE_PETICION_ALTURA);
             alto = in.nextInt();
         //BACKEND//
         metodoCreadorRectangulo(alto, base);
     }
+    private static final String MENSAJE_PETICION_ALTURA = "Introduzca la longitud de altura del rectángulo: ";
+    private static final String MENSAJE_PETICION_BASE = "Introduzca la longitud de la base del rectángulo: ";
     
 
     //Metodos suplementarios de la clase principal//
@@ -70,6 +72,5 @@ public class T_01_2_Ej22 {
             }
             System.out.println("");
         }
-        
     }
 }

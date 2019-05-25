@@ -2,8 +2,8 @@ package t_01_2_ej30;
 import java.util.Scanner;
  /******************************************************************************
  * @author baha                                                                *
- * fecha de inicializacion: May 10, 2019 1:13:49 PM                             *
- * fecha de finalizacion: May 10, 2019 1:15:40 PM                               *
+ * fecha de inicializacion: May 10, 2019 1:13:49 PM                            *
+ * fecha de finalizacion: May 10, 2019 1:15:40 PM                              *
  * nombre del proyecto: T_01_2_Ej30.java                                       *
  *******************************************************************************
  *                                                                             *
@@ -21,7 +21,8 @@ public class T_01_2_Ej30 {
     *                                                                          *
     * CLASE MAIN                                                               *
     * Funcion del método MAIN:                                                 *
-    * 
+    * Lanzar la moneda mientras no se diga lo contrario o se pierda.           *
+    * Nota la necesidad de utilizar métodos en este ejercicio.                 *
     *                                                                          *
     ***************************************************************************/
     public static void main(String[] args) {

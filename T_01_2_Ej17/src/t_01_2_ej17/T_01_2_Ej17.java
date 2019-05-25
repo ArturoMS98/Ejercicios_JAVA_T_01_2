@@ -1,8 +1,5 @@
-
 package t_01_2_ej17;
-
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 24, 2019 10:24:50 PM                           *
@@ -30,12 +27,12 @@ public class T_01_2_Ej17 {
         Scanner in = new Scanner(System.in);
         //FRONTEND//
             //PETICION DE DATOS//
-            System.out.print("Indique cuántos números se van a introducir: ");
+            System.out.print(MENSAJENUMEROSUMAS);
             repeticiones = in.nextInt();
             //INICIO BUCLE//
             for(int i = 0; i < repeticiones; i++)
             {
-                System.out.print("Introduzca un número a sumar: ");
+                System.out.print(MENSAJEPETICION);
                 numeroActual = in.nextInt();
                 resultado += numeroActual;
             }
@@ -43,6 +40,9 @@ public class T_01_2_Ej17 {
             {
                 System.out.println("La suma de los " + repeticiones + " numeros anteriores es: " + resultado);
             }
-            System.out.println("FIN DEL PROGRAMA");
+            System.out.println(MENSAJEDESPEDIDA);
     }
+    private static final String MENSAJEPETICION = "Introduzca un número a sumar: ";
+    private static final String MENSAJENUMEROSUMAS = "Indique cuántos números se van a introducir: ";
+    private static final String MENSAJEDESPEDIDA = "FIN DEL PROGRAMA";
 }

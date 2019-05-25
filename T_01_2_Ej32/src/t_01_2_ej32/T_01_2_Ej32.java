@@ -37,15 +37,18 @@ public class T_01_2_Ej32 {
         while(intentosRestantes > 0)
         {
             //FRONTEND//
-            //PETICION DE DATOS//
-            System.out.println("Introduzca la contraseña: ");
-            intento = in.nextLine();
+                //PETICION DE DATOS//
+                System.out.println(PETICION_CONTRASENIA);
+                intento = in.nextLine();
             //BACKEND//
             intentosRestantes--;
             if(intento.equals(contra))
-                System.out.println("Enhorabuena!");
+                System.out.println(CONTRASENIA_CORRECTA);
             else
-                System.out.println("Contraseña incorrecta");
+                System.out.println(CONTRASENIA_INCORRECTA);
         }        
     }
+    private static final String CONTRASENIA_INCORRECTA = "Contraseña incorrecta";
+    private static final String CONTRASENIA_CORRECTA = "Enhorabuena!";
+    private static final String PETICION_CONTRASENIA = "Introduzca la contraseña: ";
 }

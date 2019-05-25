@@ -36,11 +36,12 @@ public class T_01_2_Ej23 {
         Scanner in = new Scanner(System.in);
         //FRONTEND//
             //PETICION DE DATOS//
-            System.out.print("Introduzca la altura del triángulo: ");
+            System.out.print(MENSAJE_PETICION_ALTURA_TRIANGULO);
             altura = in.nextInt();
         //BACKEND//
         metodoCrearTriangulo(altura);
     }
+    private static final String MENSAJE_PETICION_ALTURA_TRIANGULO = "Introduzca la altura del triángulo: ";
     
 
     //Metodos suplementarios de la clase principal//

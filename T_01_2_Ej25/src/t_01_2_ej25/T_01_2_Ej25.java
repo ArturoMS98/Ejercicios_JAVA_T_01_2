@@ -3,7 +3,7 @@ import java.util.Scanner;
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: May 6, 2019 6:30:20 PM                             *
- * fecha de finalizacion: May 6, 2019 6:30:20 PM                               *
+ * fecha de finalizacion: ???                                                  *
  * nombre del proyecto: T_01_2_Ej25.java                                       *
  *******************************************************************************
  *                                                                             *
@@ -39,13 +39,15 @@ public class T_01_2_Ej25 {
         
         //FRONTEND//
             //PETICION DE DATOS//
-            System.out.print("Introduzca la altura del rectángulo a crear: ");
+            System.out.print(MENSAJE_PETICION_ALTURA_RECTANGULO);
             alto = in.nextInt();
-            System.out.print("Introduzca la anchura del rectángulo a crear: ");
+            System.out.print(MENSAJE_PETICION_ANCHURA_RECTÁNGULO);
             ancho = in.nextInt();
         //BACKEND//
         metodoCreadorRectanguloVacio(alto, ancho);
     }
+    private static final String MENSAJE_PETICION_ANCHURA_RECTÁNGULO = "Introduzca la anchura del rectángulo a crear: ";
+    private static final String MENSAJE_PETICION_ALTURA_RECTANGULO = "Introduzca la altura del rectángulo a crear: ";
     
 
     //Metodos suplementarios de la clase principal//
@@ -66,8 +68,19 @@ public class T_01_2_Ej25 {
         //CUERPO DEL METODO//
         for(contadorAltura = altura; contadorAltura > 0; contadorAltura--)
         {
-            if((contadorAltura == altura) || (contadorAltura == 1))
-                for(contadorAnchura = 0; contadorAnchura )
+            if((contadorAltura == altura) || (contadorAltura == 1)) //SI ESTAMOS EN EL PRIMER O ÚLTIMO NIVEL//
+                for(contadorAnchura = 0; contadorAnchura < anchura; contadorAnchura++)  //LLENAMOS EL NIVEL DE *//
+                    System.out.print(BORDE_RECTANGULO);
+            else//SI ESTAMOS DENTRO DEL RECTÁNGULO
+            {
+                System.out.print(BORDE_RECTANGULO);
+                for(contadorAnchura = 1; contadorAnchura < anchura - 1; contadorAnchura++) //LLENAMOS EL NIVEL DE ESPACIOS//
+                    System.out.print(DENTRO_RECTANGULO);
+                System.out.print(BORDE_RECTANGULO);
+            }
+            System.out.println("");
         }
     }
+    private static final String DENTRO_RECTANGULO = " ";
+    private static final String BORDE_RECTANGULO = "*";
 }

@@ -1,8 +1,5 @@
-
 package t_01_2_ej18;
-
 import java.util.Scanner;
-
  /******************************************************************************
  * @author baha                                                                *
  * fecha de inicializacion: Apr 24, 2019 10:40:18 PM                           *
@@ -32,14 +29,16 @@ public class T_01_2_Ej18 {
         
         //FRONTEND//
             //PETICION DE DATOS//
-            System.out.print("Introduzca el límite hasta el que sumar los múltiplos: ");
+            System.out.print(MENSAJEPIDELIMITE);
             limiteSumas = in.nextInt();
-            System.out.println("Los múltiplos que se sumarán serán los múltiplos de: ");
+            System.out.println(MENSAJEPIDEMULTIPLO);
             numeroMultiplo = in.nextInt();
         //BACKEND//
         resultado = metodoSumasMultiplos(numeroMultiplo, limiteSumas);
         System.out.println("El resultado de la suma de los múltiplos de " + numeroMultiplo + " hasta " + limiteSumas + " es: " + resultado);
     }
+    private static final String MENSAJEPIDEMULTIPLO = "Los múltiplos que se sumarán serán los múltiplos de: ";
+    private static final String MENSAJEPIDELIMITE = "Introduzca el límite hasta el que sumar los múltiplos: ";
     
 
     //Metodos suplementarios de la clase principal//
@@ -58,14 +57,14 @@ public class T_01_2_Ej18 {
     static int metodoSumasMultiplos (int multiplo, int limite)
     {
         //VARIABLES LOCALES//
-        int resultado = 1;  //se inicializa a 1 porque 1 siempre será múltiplo de múltiplo.
+        int resultado = 1;  //se inicializa a 1 porque 1 siempre será múltiplo de multiplo.
         //CUERPO DEL METODO//
-        for(int i = 1; i <= limite/multiplo; i++)
-        {
+        for(int i = 1; i <= limite/multiplo; i++) //(i*multiplo == limite) cuando (i == limite/multiplo) => ese es el final del bucle//
+        {//esto es igual que sumar i y poner que i se incremente en multiplo con cada iteracion//
             resultado += (i*multiplo);
         }
-        if (multiplo == 1)
-            resultado--;
+        if (multiplo == 1)  //En el caso de multiplo==1, i*multiplo==1 y dado que el 1 ya estaba..
+            resultado--;    //..sumado al inicializar resultado a 1, es necesario decrementar el resultado.
         return resultado;
     }
 }
